@@ -1,0 +1,66 @@
+# JustDraw Export Pipeline — auto-installed
+# Validates, optimizes SVGs, generates AVD XML, deploys to GitHub Pages.
+#
+# Setup: Enable GitHub Pages in repo Settings → Pages → Source: "GitHub Actions"
+# CDN: https://{owner}.github.io/{repo}/svg/{name}.svg
+# Optional: Set WEBHOOK_URL secret for Slack/Discord notifications.
+
+name: Export Icons
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'icons/**'
+      - 'manifest.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Quality gate
+        run: npx @justdraw/cli validate .
+      - name: Run export pipeline
+        run: npx @justdraw/cli export . --out _site
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Generate npm package
+        run: npx @justdraw/cli npm-gen _site --out _site/npm
+      - name: Send webhook notification
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          PAGES_URL: ${{ steps.deployment.outputs.page_url || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+        run: |
+          if [ -n "$WEBHOOK_URL" ]; then
+            npx @justdraw/cli notify _site
+          fi
+
+  deploy:
+    needs: export
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
