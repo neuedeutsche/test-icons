@@ -6,5 +6,6 @@
     "phone"
   ],
   "status": "draft",
-  "category": "device"
+  "category": "device",
+  "conceptId": "IC-230255"
 }
