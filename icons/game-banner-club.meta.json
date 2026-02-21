@@ -1,11 +1,5 @@
 {
-  "tags": [
-    "club",
-    "flag",
-    "pawn",
-    "piece",
-    "type"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "game"
 }

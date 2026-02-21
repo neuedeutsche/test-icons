@@ -1,12 +1,5 @@
 {
-  "tags": [
-    "alert",
-    "attention",
-    "drill",
-    "noise",
-    "notification",
-    "whistle"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "game"
 }
