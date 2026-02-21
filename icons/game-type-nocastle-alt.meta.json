@@ -1,13 +1,5 @@
 {
-  "tags": [
-    "broken",
-    "disabled",
-    "major",
-    "off",
-    "piece",
-    "rook",
-    "type"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "game"
 }

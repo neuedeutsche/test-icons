@@ -1,11 +1,5 @@
 {
-  "tags": [
-    "pawn",
-    "piece",
-    "promotion",
-    "queen",
-    "type"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "game"
 }
