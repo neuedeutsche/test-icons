@@ -1,13 +1,5 @@
 {
-  "tags": [
-    "check",
-    "confirm",
-    "device",
-    "handheld",
-    "mobile",
-    "phone",
-    "positive"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "device"
 }
