@@ -1,13 +1,5 @@
 {
-  "tags": [
-    "arrow",
-    "badge",
-    "bishop",
-    "mate",
-    "minor",
-    "move",
-    "piece"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

@@ -1,15 +1,5 @@
 {
-  "tags": [
-    "cross",
-    "delete",
-    "disabled",
-    "dots",
-    "ellipsis",
-    "negative",
-    "off",
-    "pending",
-    "remove"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "mark"
 }

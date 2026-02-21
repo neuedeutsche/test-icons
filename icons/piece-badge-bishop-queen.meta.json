@@ -1,12 +1,5 @@
 {
-  "tags": [
-    "badge",
-    "bishop",
-    "crown",
-    "minor",
-    "piece",
-    "queen"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }
