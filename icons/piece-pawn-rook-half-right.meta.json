@@ -1,11 +1,5 @@
 {
-  "tags": [
-    "major",
-    "pawn",
-    "piece",
-    "right",
-    "rook"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

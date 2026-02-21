@@ -1,13 +1,5 @@
 {
-  "tags": [
-    "group",
-    "pair",
-    "pawn",
-    "piece",
-    "plural",
-    "set",
-    "triplets"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

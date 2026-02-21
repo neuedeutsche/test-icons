@@ -1,18 +1,5 @@
 {
-  "tags": [
-    "badge",
-    "cancel",
-    "close",
-    "cross",
-    "delete",
-    "disabled",
-    "major",
-    "negative",
-    "off",
-    "piece",
-    "queen",
-    "remove"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

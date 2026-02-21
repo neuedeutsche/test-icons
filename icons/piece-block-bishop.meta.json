@@ -1,11 +1,5 @@
 {
-  "tags": [
-    "bishop",
-    "block",
-    "minor",
-    "piece",
-    "prohibition"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

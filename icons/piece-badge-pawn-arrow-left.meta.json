@@ -1,14 +1,5 @@
 {
-  "tags": [
-    "arrow",
-    "badge",
-    "direction",
-    "horizontal",
-    "left",
-    "move",
-    "pawn",
-    "piece"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

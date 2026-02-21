@@ -1,11 +1,5 @@
 {
-  "tags": [
-    "bishop",
-    "combo",
-    "knight",
-    "minor",
-    "piece"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }

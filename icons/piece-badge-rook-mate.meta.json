@@ -1,12 +1,5 @@
 {
-  "tags": [
-    "badge",
-    "major",
-    "mate",
-    "move",
-    "piece",
-    "rook"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }
