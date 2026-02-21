@@ -1,10 +1,5 @@
 {
-  "tags": [
-    "bishop",
-    "knight",
-    "pawn",
-    "piece"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "pieces"
 }

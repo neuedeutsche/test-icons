@@ -1,17 +1,5 @@
 {
-  "tags": [
-    "calendar",
-    "cancel",
-    "close",
-    "cross",
-    "delete",
-    "disabled",
-    "negative",
-    "off",
-    "planner",
-    "remove",
-    "schedule"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "time"
 }

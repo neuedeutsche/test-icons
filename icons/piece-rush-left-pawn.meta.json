@@ -1,13 +1,5 @@
 {
-  "tags": [
-    "direction",
-    "fast",
-    "left",
-    "move",
-    "piece",
-    "rush",
-    "set"
-  ],
+  "tags": [],
   "status": "draft",
   "category": "piece"
 }
